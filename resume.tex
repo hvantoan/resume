@@ -1,4 +1,6 @@
 \documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -8,7 +10,6 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
@@ -20,7 +21,7 @@
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % serif
-% \usepackage{charter}
+\usepackage{charter}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -52,7 +53,7 @@
 }{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
+\pdfgentounicode=1  
 
 % -------------------- CUSTOM COMMANDS --------------------
 \newcommand{\resumeItem}[1]{
@@ -98,10 +99,10 @@
 
 % -------------------- HEADING--------------------
 \begin{flushright}
-  % \vspace{-4pt}
+  \vspace{-4pt}
   \color{gray}
   \item
-  Last Updated on April 26th, 2024
+  Last Updated on December 24th, 2024
 \end{flushright}
 
 \vspace{-5pt}
@@ -110,21 +111,13 @@
   \textbf{\Huge\scshape{HO VAN TOAN}}\vspace{8pt} \\
   \small
   \faIcon{github}
-  \href{https://github.com/mattyDoe}{\underline{github.com/hvantoan}} $  $
+  \href{https://github.com/hvantoan}{\underline{github.com/hvantoan}} $  $
   \faIcon{linkedin}
-  \href{https://linkedin.com/in/mattydoe}{\underline{linkedin.com/in/hvantoan}} $  $
+  \href{https://linkedin.com/in/hvantoan}{\underline{linkedin.com/in/hvantoan}} $  $
   \faIcon{envelope}
   \href{mailto:it.vantoan@gmail.com}
   {\underline{it.vantoan@gmail.com}}
 \end{center}
-
-% -------------------- EDUCATION --------------------
-\section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Ho Chi Minh City University of Technology}{June 2019}
-{B.S. Software engineering}{Current GPA: 3.45/4.0}
-\resumeSubHeadingListEnd
 
 % -------------------- SKILLS --------------------
 \section{Skills}
@@ -133,7 +126,7 @@
         \textbf{Languages}{: C\#, JavaScript/TypeScript, HTML/CSS} \\
         \textbf{Tools}{: Git/GitHub, VS Code, IntelliJ GoLand/IDEA}\\
         \textbf{Frameworks}{: .Net Framework, .NET Core , React/Next} \\
-        \textbf{Libraries}{: Entity Framework, React  }\\
+        \textbf{Libraries}{: Entity Framework, React, NextJS  }\\
         }}
 \end{itemize}
 
@@ -142,11 +135,11 @@
 \resumeSubHeadingListStart
   \resumeProjectHeading
   {\textbf{FMS Project} $|$ \footnotesize\emph{C\#, NextJs, APIs, Git, Unix Shell, VS Code (Freelance)}}{January 2022 - Now}
-  \item\textbf{Team size:} {6 members} \item{Main responsibilities:} 
+  \item\textbf{Team size:} {12 members} \item{Main responsibilities:} 
   \resumeItemListStart
-    \resumeItem{Build RESTful APIs using .NET Core 5x/6x with Entity Framework Core.} 
-    \resumeItem{ Research and apply tuning solutions, optimize the system in terms of performance and load capacity.} 
-    \resumeItem{ Implement new features, maintain and fix bugs for the Flutter (Mobile) and Blazor WebAssembly (Web).}
+    \resumeItem{Build RESTful APIs using .NET Core with Entity Framework Core.} 
+    \resumeItem{Research and apply tuning solutions, optimize the system in terms of performance and load capacity.} 
+    \resumeItem{Implement new features, maintain and fix bugs for the Flutter (Mobile) and Blazor WebAssembly (Web).}
     \resumeItem{Design, implement a system for async data for commercial business using Redis, RabbitMQ}
   \resumeItemListEnd
   \item {\textbf{Technologies used:} {C\#, ASP.NET Core, .Net 5x/6x, PostgreSQL, Redis, RabitMQ, OpenXML, ClosedXML.}}
@@ -155,16 +148,18 @@
     \resumeItem{Understand well how to implement and operate a project. Know how to solve problems quickly and ﬂexibly.}
     \resumeItem{Good teamwork and communication skills. Work eﬀectively with QA, tester, and Front-end developers.}
     \resumeItem{Have rich experience in Back-end development: C\#, Web API, Redis, RabitMQ, PostgreSQL, OpenXML, ClosedXML.}
-    \resumeItem{Have experience in Front-end developer: JavaScrip, Reacjs, Material UI, Redux-toolkit...}
+    \resumeItem{Have experience in Front-end developer: JavaScrip, TypeScript, ReacJs, NextJs, Material UI, Redux...}
     \resumeItem{Good knowledge of data structures and algorithms.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
+
+
 
 % -------------------- EXPERIENCE --------------------
 \section{Experience}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Competitive Programming Club} $|$ \footnotesize\emph{Member}\vspace{8pt}}{Sept. 2023 -- Present}
+{\textbf{CÔNG TY CỔ PHẦN CÔNG NGHỆ VIETINFO} $|$ \footnotesize\emph{Member}\vspace{8pt}}{ 2023 -- Present}
 {\small{Involved in the club centered around Competitive Programming}}
 
 \resumeProjectHeading
@@ -174,16 +169,6 @@
 \resumeProjectHeading
 {\textbf{Luigi Team Charity} $|$ \footnotesize\emph{Volunteer, Manager}\vspace{8pt}}{2018 -- Present}
 {\small{Earned an award for philanthropic hours spent, still giving away 100 stocked backpacks a year}}
-
-\subsection{Hobbies}
-
-\resumeProjectHeading
-{\textbf{Playing the Drums}\vspace{8pt}}{2013 -- 2019}
-{\small{Played the drums in symphonic, jazz, and marching bands}}
-
-\resumeProjectHeading
-{\textbf{3\textsuperscript{rd} Place Time Keeping Challenge Championship \footnotesize{(Time Keeping Assocation)}}\vspace{8pt}}{Feb. 2022 -- May 2022}
-{\small{Won \$1500 nationally competing against high school students in counting seconds and minutes}}
 
 \resumeSubHeadingListEnd
 
