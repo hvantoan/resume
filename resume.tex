@@ -18,10 +18,6 @@
 
 
 % -------------------- FONT OPTIONS --------------------
-% sans-serif
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% serif
 \usepackage{charter}
 
 \pagestyle{fancy}
@@ -57,8 +53,6 @@
 \pdfgentounicode=1
 
 % -------------------- CUSTOM COMMANDS --------------------
-
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \setlength{\footskip}{4.08003pt}
@@ -94,7 +88,7 @@
 \section{Skills}
 \resumeItemListStart{
 	\resumeItem{\textbf{Programming Languages:} C\#, JavaScript \& TypeScript}
-	\resumeItem{\textbf{Frameworks/Platforms:} .NET Core/MVC, ReactJs, NextJs, Redux, Tailwind CSS, MUI UI, Shadcn, Blazor}
+	\resumeItem{\textbf{Frameworks/Platforms:} .NET Core/MVC, ReactJs, NextJs, Redux, Tailwind CSS, MUI UI, Redis, RabbitMQ}
 	\resumeItem{\textbf{Databases:} SQL Server, PostgreSQL}
 	\resumeItem{\textbf{Tools \& Processes:} Git, CI/CD, Docker}
 }\resumeItemListEnd{}
@@ -105,19 +99,17 @@
 
 % VietInfo
 \resumeSubHeadingListStart{
-	\resumeProjectHeading{\textbf{CONG TY CO PHAN VIETINFO --- Fullstack developer} $|$ \footnotesize\emph{C\#, ReactJS}}{June 2022 --- Now}
+	\company{CONG TY CO PHAN VIETINFO --- Fullstack developer}{C\#, ReactJS}{June 2022 --- Now}
 	% Chat Project
-	\item\textbf{Project:} {Internal Chat Project} {(4 members, 1 front-end, 1 back-end, 1 mobile)}
-	\resumeItemListStart{
-		\resumeItem{\textbf{Description:} {A web application that enables departments to communicate, manage, and assign tasks. It supports over 200 concurrent users and integrates with APIs of other company products.}}
-		\resumeItem{\textbf{Technologies used:} {C\#, .Net Core, SQL Server, ReactTS, Material UI, Tailwind CSS}}
-		\resumeItem{\textbf{Responsibilities:}}
-		\resumeItemListStart{
-			\resumeItem{Develop a web chat feature with responsive design, optimized for all devices.}
-			\resumeItem{Analyze requirements from the Project Manager (PM) to build and integrate APIs from other company products.}
-			\resumeItem{Ensure system stability to support over 200 concurrent users.}
-		}\resumeItemListEnd{}
-	}\resumeItemListEnd{}
+	\projectheader{Internal Chat Project}{4 members, 1 front-end, 1 back-end, 1 mobile}{
+		\projectdesc{A web application that enables departments to communicate, manage, and assign tasks. It supports over 200 concurrent users and integrates with APIs of other company products.}
+		\techused{C\#, .Net Core, SQL Server, ReactTS, Material UI, Tailwind CSS}
+		\responsibilities{
+			\respitem{Develop a web chat feature with responsive design, optimized for all devices.}
+			\respitem{Analyze requirements from the Project Manager (PM) to build and integrate APIs from other company products.}
+			\respitem{Ensure system stability to support over 200 concurrent users.}
+		}
+	}
 
 	% Quan	% Quan ly van ban ly van ban
 	\item\textbf{Project:} {QLVB Project} {(8 members, 3 front-end, 2 back-end, 3 mobile)}
@@ -138,9 +130,10 @@
 
 \resumeSubHeadingListStart{
 	\resumeProjectHeading{\textbf{FMS Project --- Fullstack developer} $|$ \footnotesize\emph{C\#, NextJs (Freelance)}}{January 2022 --- Now}
-	\item\textbf{Team size:} {12 members, 2 back-end, 3 front-end, 2 mobile, 1 BA, 3 Tester, 1}\resumeItemListStart{
+	\item\textbf{Team size:} {12 members}
+	\resumeItemListStart{
 		\resumeItem{\textbf{Description:} {A management system including CRM and CMS with e-commerce, sales management, inventory, shipping, authorization, reporting,... for web and mobile platforms.}}
-		\resumeItem{\textbf{Technologies used:} {C\#, .Net Core, SQL Server, ReactTS, Devextreme, Bootstrap}}
+		\resumeItem{\textbf{Technologies used:} {C\#, .Net Core, SQL Server, ReactTS, Redis, RabbitMQ, Docker}}
 		\resumeItem{\textbf{Responsibilities:}}
 		\resumeItemListStart{
 			\resumeItem{Develop a KYC system using gRPC.}
@@ -155,11 +148,39 @@
 
 % -------------------- EXPERIENCE --------------------
 \section{Projects}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{CONG TY CO PHAN CONG NGHE VIETINFO} $|$ \footnotesize\emph{Member}\vspace{8pt}}{ 2023 --- Present}
-{\small{Involved in the club centered around Competitive Programming}}
 
-\resumeSubHeadingListEnd
+\resumeSubHeadingListStart{
+	\resumeProjectHeading{\textbf{SEO Tool} $|$ \footnotesize\emph{C\#}}{}
+	\resumeItemListStart{
+		\resumeItem{\textbf{Description:} {A tool that helps users manage and optimize their website's SEO performance.}}
+		\resumeItem{\textbf{Technologies used:} {C\#, .Net Core, SQL Server, Blazor}}
+		\resumeItem{\textbf{Responsibilities:}}
+		\resumeItemListStart{
+			\resumeItem{Developed a Google Search crawler to extract TOP 10/50/100 results for keyword analysis and SEO recommendations.}
+			\resumeItem{Engineered a rank tracking system monitoring post positions, indexing status, and optimization strategies.}
+			\resumeItem{Optimized performance using MemoryCache for instant keyword suggestions and reduced latency.}
+			\resumeItem{Extended Blazor-based CMS with modules for SEO analytics and automated reporting workflows.}
+			\resumeItem{Designed relational databases with EF Core and optimized queries using LINQ for large datasets.}
+		}\resumeItemListEnd{}
+	}\resumeItemListEnd{}
+}\resumeSubHeadingListEnd{}
+
+\resumeSubHeadingListStart{
+	\resumeProjectHeading{\textbf{Minder} $|$ \footnotesize\emph{C\#}}{}
+	\resumeItemListStart{
+		\resumeItem{\textbf{Description:} A sports coordination platform enabling users to organize matches, discover players/teams, and manage sports activities.}
+		\resumeItem{\textbf{Technologies Used:} RESTful APIs, WebSocket/Socket.io, Firebase Authentication, real-time databases, push notifications, UI/UX design}
+		\resumeItem{\textbf{Responsibilities:}}
+		\resumeItemListStart{
+			\resumeItem{Designed and implemented user authentication flows (email, phone, Google OAuth) with secure token management.}
+			\resumeItem{Developed RESTful APIs for profile/team management, including avatar uploads, contact updates, and team roster controls.}
+			\resumeItem{Built real-time features using WebSocket: in-app messaging for teams/opponents and live match updates.}
+			\resumeItem{Created a match discovery system with geolocation filtering, time-based search, and dynamic join/leave functionality.}
+			\resumeItem{Integrated Firebase Cloud Messaging for push notifications about matches, messages, and team invitations.}
+			\resumeItem{Optimized UI/UX for team creation workflows, including member invitations and role-based access controls.}
+		}\resumeItemListEnd{}
+	}\resumeItemListEnd{}
+
+}\resumeSubHeadingListEnd{}
 
 \end{document}
