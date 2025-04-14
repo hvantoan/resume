@@ -13,6 +13,7 @@
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
+\usepackage{lato}
 
 \input{glyphtounicode}
 
@@ -60,7 +61,7 @@
 % -------------------- START OF DOCUMENT --------------------
 \begin{document}
 
-\include{custom-command}
+\input{custom-command.tex}
 
 % -------------------- HEADING--------------------
 \begin{flushright}
@@ -98,6 +99,22 @@
 
 % VietInfo
 \mainList{}{
+
+	\company{FMS --- Fullstack developer}{C\#, NextJs (Freelance, 12 members)}{January 2022 --- Now}
+	\mainList{}{
+		\projectheader{FMS Projects}{}{
+			\projectdesc{A management system including CRM and CMS with e-commerce, sales management, inventory, shipping, authorization, reporting,... for web and mobile platforms.}
+			\techused{C\#, .Net Core, PostgreSQL, ReactTS, Redis, RabbitMQ, Docker}
+			\responsibilities{
+				\respitem{Developed a comprehensive management system including CRM and CMS for web and mobile platforms}
+				\respitem{Implemented a KYC system using gRPC and designed the Audit Worker module with Markdown and RabbitMQ.}
+				\respitem{Built and optimized the Report module, including website and APIs, based on Business Analyst requirements.}
+				\respitem{Maintain, troubleshoot, and enhance the website and APIs according to tester reports.}
+				\respitem{Maintained and enhanced the system, applying microservices architecture and Domain-Driven Design (DDD).}
+			}
+		}
+	}
+
 	\company{CONG TY CO PHAN VIETINFO --- Fullstack developer}{C\#, ReactJS}{June 2022 --- Now}
 	% Chat Project
 	\mainList{}{
@@ -125,20 +142,6 @@
 		}
 	}
 
-	\company{FMS --- Fullstack developer}{C\#, NextJs (Freelance)}{January 2022 --- Now}
-	\mainList{}{
-		\projectheader{FMS Project}{12 members}{
-			\projectdesc{A management system including CRM and CMS with e-commerce, sales management, inventory, shipping, authorization, reporting,... for web and mobile platforms.}
-			\techused{C\#, .Net Core, PostgreSQL, ReactTS, Redis, RabbitMQ, Docker}
-			\responsibilities{
-				\respitem{Developed a comprehensive management system including CRM and CMS for web and mobile platforms}
-				\respitem{Implemented a KYC system using gRPC and designed the Audit Worker module with Markdown and RabbitMQ.}
-				\respitem{Built and optimized the Report module, including website and APIs, based on Business Analyst requirements.}
-				\respitem{Maintain, troubleshoot, and enhance the website and APIs according to tester reports.}
-				\respitem{Maintained and enhanced the system, applying microservices architecture and Domain-Driven Design (DDD).}
-			}
-		}
-	}
 }
 
 % -------------------- EXPERIENCE --------------------
@@ -155,9 +158,7 @@
 			\respitem{Extended the Blazor-based CMS with SEO analytics and automated reporting workflows.}
 		}
 	}
-}
 
-\mainList{}{
 	\projectheader{Minder}{}{
 		\projectdesc{A sports coordination platform enabling users to organize matches, discover players/teams, and manage sports activities.}
 		\techused{RESTful APIs, SignalR, .Net Core, UI/UX design}
