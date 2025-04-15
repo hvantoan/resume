@@ -14,9 +14,10 @@
 \usepackage{xcolor}
 \usepackage{fontawesome5}
 \usepackage{lato}
+\usepackage{geometry}
 
 \input{glyphtounicode}
-
+\input{custom-command.tex}
 
 % -------------------- FONT OPTIONS --------------------
 \usepackage{charter}
@@ -24,15 +25,17 @@
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
+\fancyhead[R]{\color{gray}Last Updated on \today}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-1in}
-\addtolength{\textheight}{1.0in}
+\geometry{
+    a4paper,
+    left=1cm,
+    right=1cm,
+    top=1cm,
+    bottom=1cm
+}
 
 \urlstyle{same}
 
@@ -56,33 +59,26 @@
 % -------------------- CUSTOM COMMANDS --------------------
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\setlength{\footskip}{4.08003pt}
+\setlength{\footskip}{4pt}
 
 % -------------------- START OF DOCUMENT --------------------
 \begin{document}
 
-\input{custom-command.tex}
-
 % -------------------- HEADING--------------------
-\begin{flushright}
-	\vspace{-4pt}
-	\color{gray}
-	\item
-	Last Updated on \today
-\end{flushright}
 
 \vspace{-5pt}
 
 \begin{center}
 	\textbf{\Huge\scshape{HO VAN TOAN}}\vspace{8pt} \\
 	\small
+	\faIcon{phone}
+	\href{tel:0336516906}{\underline{0336516906}} $ $
 	\faIcon{github}
 	\href{https://github.com/hvantoan}{\underline{github.com/hvantoan}} $ $
 	\faIcon{linkedin}
 	\href{https://linkedin.com/in/hvantoan}{\underline{linkedin.com/in/hvantoan}} $ $
 	\faIcon{envelope}
-	\href{mailto:it.vantoan@gmail.com}
-	{\underline{it.vantoan@gmail.com}}
+	\href{mailto:it.vantoan@gmail.com}{\underline{it.vantoan@gmail.com}}
 \end{center}
 
 % -------------------- SKILLS --------------------
@@ -145,10 +141,12 @@
 }
 
 % -------------------- EXPERIENCE --------------------
+\newpage
 \section{Projects}
 
 \mainList{}{
 	\projectheader{SEO Tool}{}{
+
 		\projectdesc{A tool that helps users manage and optimize their website's SEO performance.}
 		\techused{C\#, .Net Core, SQL Server, Blazor}
 		\responsibilities{
