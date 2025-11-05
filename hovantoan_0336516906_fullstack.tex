@@ -13,7 +13,6 @@
 \usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{fontawesome5}
-\usepackage{lato}
 \usepackage{geometry}
 
 \definecolor{heading}{HTML}{2A363B}
@@ -23,8 +22,12 @@
 \input{glyphtounicode}
 \input{custom-command.tex}
 
-% -------------------- FONT OPTIONS --------------------
+% -------------------- FONT SYNCHRONIZATION --------------------
+% Using charter as the primary font for consistency
 \usepackage{charter}
+
+% Remove lato package to avoid font conflicts
+% \usepackage{lato}  % Commented out to maintain font consistency
 
 \addtolength{\topmargin}{-4.08003pt}
 
