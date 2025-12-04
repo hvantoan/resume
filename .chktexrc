@@ -1,0 +1,3 @@
+# ChkTeX configuration file
+# Suppress warning 26: spaces before punctuation (intentional spacing in header)
+CmdLine { -n26 }
