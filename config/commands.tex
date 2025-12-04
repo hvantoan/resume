@@ -1,0 +1,81 @@
+% ================================================================================
+% CUSTOM COMMANDS
+% ================================================================================
+% Reusable commands for consistent styling throughout the CV
+
+% ------------------------------------------------------------------------------
+% LIST COMMANDS
+% ------------------------------------------------------------------------------
+
+% Main list wrapper
+\newcommand{\mainList}[2]{
+    \begin{itemize}[leftmargin=0.15in, label={#1}]
+        #2
+    \end{itemize}
+}
+
+% Skill list wrapper
+\newcommand{\skillList}[1]{
+    \begin{itemize}[leftmargin=0.15in, label={\textbf{-}}]
+        {#1}
+    \end{itemize}
+}
+
+% ------------------------------------------------------------------------------
+% EXPERIENCE COMMANDS
+% ------------------------------------------------------------------------------
+
+% Company header with title, technologies, and date range
+\newcommand{\company}[3]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{Xr}
+        \textbf{#1} $|$ \footnotesize\emph{#2} & \hspace{1em}#3 \\
+    \end{tabularx}
+    \vspace{-7pt}
+}
+
+% Experience/Project header with nested content
+\newcommand{\experienceHeader}[3]{
+    \item \textbf{Project:} #1 \textit{#2}
+    \begin{itemize}[leftmargin=0.15in, label={•}]
+        {#3 \vspace{5pt}}
+    \end{itemize}
+}
+
+% ------------------------------------------------------------------------------
+% PROJECT DETAIL COMMANDS
+% ------------------------------------------------------------------------------
+
+% Project description
+\newcommand{\projectdesc}[1]{
+    \item\textbf{Description:} #1
+}
+
+% Technology stack used
+\newcommand{\techused}[1]{
+    \item\textbf{Technology:} #1
+}
+
+% Responsibilities section with nested items
+\newcommand{\responsibilities}[1]{
+    \item\textbf{Responsibility:}
+    \begin{itemize}[leftmargin=0.15in, label={\textbf{-}}]
+        #1
+    \end{itemize}
+}
+
+% Single responsibility item
+\newcommand{\respitem}[1]{
+    \item{{#1}}
+}
+
+% ------------------------------------------------------------------------------
+% SKILL COMMANDS
+% ------------------------------------------------------------------------------
+
+% Single skill entry
+\newcommand{\skill}[2]{
+    \item\small{
+        {\textbf{#1}: #2 \vspace{-5pt}}
+    }
+}
